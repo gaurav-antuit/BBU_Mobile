@@ -1,0 +1,115 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-authentication-test;user-is-able-to-login",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "user is able to login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on BBU-ION login page",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4743321799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "Enter User name",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2849790700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Click on first next button",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263582000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Enter Password",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2398293000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Click on next button",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 679960599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Click on stay on button",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 628600599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I see Home page of ION application",
+            "match": {
+              "location": "src\\test\\Steps\\login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131073699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User authentication test",
+    "tags": [],
+    "uri": "src\\test\\features\\loginTest.feature"
+  }
+]
