@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js test",
-    "posttest": "npx ts-node src/helper/reports.ts" ,
+    "reportest": "npx ts-node src/helper/reports.ts" ,
     "test-headed": "npx playwright test --headed"
   },
   "author": "gs4586",

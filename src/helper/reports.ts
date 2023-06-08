@@ -7,7 +7,7 @@ report.generate({
   metadata: {
     browser: {
       name: "chrome",
-      version: "60",
+      version: "114.07",
     },
     device: "Iphone SE",
     platform: {
@@ -16,7 +16,7 @@ report.generate({
     },
   },
   customData: {
-    title: "Run info",
+    title: "Test Execution Status",
     data: [
       { label: "Project", value: "BBU-Mobile" },
       { label: "Release", value: "1.0.1" },

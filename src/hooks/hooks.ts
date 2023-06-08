@@ -1,4 +1,4 @@
-import {BeforeAll ,AfterAll} from "@cucumber/cucumber" ;
+import {Before ,After} from "@cucumber/cucumber" ;
 
 import {chromium, Browser ,Page } from "@playwright/test" ;
 import { pageFixture } from "./pageFixture";
@@ -6,15 +6,15 @@ import { pageFixture } from "./pageFixture";
 let page :Page
 let browser:Browser
 
-BeforeAll (async function () {
-    browser =await chromium.launch ({ headless : true})
+Before (async function () {
+    browser =await chromium.launch ({ headless : false})
    page = await browser.newPage() ;
    pageFixture.page = page; 
     
 })
 
-AfterAll (async function () {
-    await page.close() ;
+After (async function () {
+    await pageFixture.page.close() ;
     await browser.close() ;
     
 })

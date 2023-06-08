@@ -14,7 +14,8 @@
        "publishQuiet" : true ,
        "dryRun" : false ,
        "require" : [
-        "src/test/Steps/login.ts"
+        "src/test/Steps/*.ts" ,
+        "src/hooks/hooks.ts"
        ]  ,
 
        "requireModule" : [
@@ -30,7 +31,7 @@
         "json:test-results/cucumber-report.json"
 
 
-       ]
+       ]  
 
   
     } 
