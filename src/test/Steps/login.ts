@@ -4,8 +4,6 @@ import { chromium, Page, Browser, expect } from "@playwright/test";
 
 import { pageFixture } from "../../hooks/pageFixture"; 
 
-
-
 setDefaultTimeout (8 * 1000 *2 )
 
          Given('I am on BBU-ION login page',   async function () {
