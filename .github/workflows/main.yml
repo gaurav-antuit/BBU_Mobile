@@ -20,4 +20,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run cucumber tests
         run:  npm test
-         
+        if: always()
+        with:
+          name: HTML Report
+          path: test-results\cucumber-report.html
+          retention-days: 2
