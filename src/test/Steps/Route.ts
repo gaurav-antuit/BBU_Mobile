@@ -5,7 +5,9 @@ import {Page, chromium, Browser, expect} from '@playwright/test'
 import { pageFixture } from '../../hooks/pageFixture';
 
 When('click on store', async function () {
-     await pageFixture.page.getByText('AIM 0141 PATS MEAT FARMS T 9 HEWITT SQUARE-LARK' ).click();
+     //await pageFixture.page.getByText('AIM 0141 PATS MEAT FARMS T 9 HEWITT SQUARE-LARK' ).click();
+
+     await pageFixture.page.getByText("AIM 0141 PATS MEAT FARMS T").click();
   });
 
 
