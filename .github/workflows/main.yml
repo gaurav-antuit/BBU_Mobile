@@ -14,14 +14,17 @@ jobs:
        with: 
          node-version: 18
 
-      - name: Install dependencies 
-        run: npm ci
-      - name: Install browser
-        run: npx playwright install --with-deps
-      - name: Run cucumber tests
-        run:  npm test
-        if: always()
-        with:
-          name: HTML Report
-          path: test-results\cucumber-report.html
-          retention-days: 2
+     - name: Install dependencies 
+       run: npm ci
+     - name: Install browser
+       run: npx playwright install --with-deps
+     - name: Run cucumber tests
+       run:  npm test
+     - name: Run Report
+       run: npx ts-node src/helper/reports.ts
+     - uses: actions/upload-artifact@v3
+       if: always()
+       with:
+         name: HTML Report
+         path: ./test-results/cucumber-report.html
+         retention-days: 1
