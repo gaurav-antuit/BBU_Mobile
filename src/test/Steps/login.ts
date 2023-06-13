@@ -45,9 +45,12 @@ setDefaultTimeout (8 * 1000 *2 )
 
         Then('I see Home page of ION application', async function () {
 
-          const Title = 'Intelligent Ordering Network'  ;
+          const Title = 'Intelligent Ordering Networked'  ;
+           
 
           await expect(pageFixture.page).toHaveTitle(Title) ;
+
+          await pageFixture.page.waitForTimeout(2000) ;
 
           console.log(" User login successfully ")
              

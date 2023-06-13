@@ -1,4 +1,4 @@
-@test
+
 Feature: Add product test
    Scenario: Add new store on route page 
    Given I am on BBU-ION login page 
