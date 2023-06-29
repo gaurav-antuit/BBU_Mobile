@@ -29,7 +29,7 @@ setDefaultTimeout (8 * 1000 *2 )
 
          When('Enter Password', async function () {
           
-           await pageFixture.page.getByPlaceholder('Password').fill('tRee>8425605') ;
+           await pageFixture.page.getByPlaceholder('Password').fill('M@ngo@2023!') ;
          
           });
 
